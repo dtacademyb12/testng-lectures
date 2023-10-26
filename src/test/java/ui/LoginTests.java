@@ -1,16 +1,17 @@
+package ui;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Demo {
+public class LoginTests {
 
 
     WebDriver driver;
@@ -29,6 +30,12 @@ public class Demo {
    public void cleanUp(){
        driver.quit();
    }
+
+//   @Before
+//    public void another(){
+//       System.out.println("Junit test");
+////       org.junit.Assert.assertEquals(, );
+//    }
 
 
     @Test

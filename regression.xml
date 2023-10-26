@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test Suite">
+<!--    suite represents the collection of your test cases-->
+
+    <test name="UI tests">
+
+       <packages>
+           <package name="ui"/>
+       </packages>
+
+
+    </test>
+
+    <test name="Unit tests">
+
+        <packages>
+            <package name="unitTests"/>
+        </packages>
+
+
+    </test>
+
+<!--    <test name="DB tests">-->
+
+<!--    </test>-->
+
+
+
+</suite>
