@@ -6,19 +6,20 @@
 
        <packages>
            <package name="ui"/>
+           <package name="unitTests"/>
        </packages>
 
 
     </test>
 
-    <test name="Unit tests">
+<!--    <test name="Unit tests">-->
 
-        <packages>
-            <package name="unitTests"/>
-        </packages>
+<!--        <packages>-->
+<!--            <package name="unitTests"/>-->
+<!--        </packages>-->
 
 
-    </test>
+<!--    </test>-->
 
 <!--    <test name="DB tests">-->
 

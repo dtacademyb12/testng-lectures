@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Classes">
+
+
+    <test name="UI tests">
+
+       <classes>
+
+           <class name="ui.LoginTests">
+               <methods>
+<!--                   <include name="negative.*"/>-->
+<!--                   starts with-->
+<!--                   <include name=".*Username"/>-->
+                   <include name=".*Login.*"/>
+                   <!--                   contains-->
+               </methods>
+           </class>
+
+
+
+       </classes>
+
+
+    </test>
+
+
+</suite>

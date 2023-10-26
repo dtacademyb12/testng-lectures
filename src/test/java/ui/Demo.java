@@ -1,6 +1,6 @@
 package ui;
 
-import org.junit.Before;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -33,11 +33,6 @@ public class Demo {
        driver.quit();
    }
 
-//   @Before
-//    public void another(){
-//       System.out.println("Junit test");
-////       org.junit.Assert.assertEquals(, );
-//    }
 
 
     @Test

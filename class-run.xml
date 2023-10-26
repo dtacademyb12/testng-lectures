@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Classes">
+
+
+    <test name="UI tests">
+
+       <classes>
+
+           <class name="ui.LoginTests"></class>
+           <class name="unitTests.UnitTests"></class>
+
+
+       </classes>
+
+
+    </test>
+
+
+</suite>
