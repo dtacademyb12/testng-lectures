@@ -19,7 +19,7 @@
                </methods>
            </class>
 
-           <class name="ui.Demo">
+           <class name="ui.DemoTest">
                <methods>
                    <exclude name="positiveLogin"/>
                </methods>
