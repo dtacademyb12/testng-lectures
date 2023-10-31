@@ -33,7 +33,7 @@ public class Priority {
         System.out.println("Test k");
     }
 
-    @Test (priority = -1)
+    @Test (priority = -1, groups = "smoke")
     public void test_z(){
         System.out.println("Test z");
     }

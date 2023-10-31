@@ -14,14 +14,14 @@ public class UnitTests {
         Assert.assertEquals(result, 12);
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void test2(){
         Calculator calculator = new Calculator();
         int result = calculator.add(0, 0);
         Assert.assertEquals(result, 0);
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void test3(){
         Calculator calculator = new Calculator();
         int result = calculator.add(-1, -1);

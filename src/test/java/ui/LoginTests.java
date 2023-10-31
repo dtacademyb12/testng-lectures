@@ -16,7 +16,7 @@ public class LoginTests {
 
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
    public void setupTest(){
        driver = new ChromeDriver();
 
@@ -26,7 +26,7 @@ public class LoginTests {
        driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
    }
 
-   @AfterMethod
+   @AfterMethod (alwaysRun = true)
    public void cleanUp(){
        driver.quit();
    }
@@ -38,7 +38,7 @@ public class LoginTests {
 //    }
 
 
-    @Test
+    @Test (groups = "smoke")
     public void positiveLogin(){
 
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester", Keys.TAB, "test", Keys.ENTER);
@@ -49,7 +49,7 @@ public class LoginTests {
     }
 
 
-    @Test
+    @Test (groups = "smoke")
     public void negativeLoginWithInvalidUsername(){
 
 
@@ -75,7 +75,7 @@ public class LoginTests {
 
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void negativeLoginWithNoCredentials(){
 
 

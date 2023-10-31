@@ -63,6 +63,9 @@
                     <version>3.2.1</version>
                     <configuration>
                         <suiteXmlFiles>
+        <!-- if you run  the same xml file all the time then hardcoding it would be okay-->
+<!--                            <suiteXmlFile>regression.xml</suiteXmlFile>   -->
+
                             <suiteXmlFile>${xmlFile}</suiteXmlFile>
 <!--                            once you set this placeholder  you need to run the tests with a -D switch as follows:
                                mvn test -D xmlFile=regression.xml      -->
