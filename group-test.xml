@@ -8,7 +8,11 @@
 
         <groups>
             <run>
+
                 <include name="smoke"/>
+<!--                <include name="login"/>-->
+<!--                <exclude name="login"/>-->
+
             </run>
         </groups>
 

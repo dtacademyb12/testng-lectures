@@ -5,9 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -15,6 +13,17 @@ public class LoginTests {
 
 
     WebDriver driver;
+
+
+    @BeforeGroups (groups = "smoke")
+    public void setup(){
+        System.out.println("Smoke tests setup DONE");
+    }
+
+    @AfterGroups (groups = "smoke")
+    public void tearDown(){
+        System.out.println("Smoke tests teardown is DONE");
+    }
 
     @BeforeMethod (alwaysRun = true)
    public void setupTest(){

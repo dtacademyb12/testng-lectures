@@ -18,7 +18,8 @@ public class DependencyTests {
     WebDriver driver;
 
 
-     @BeforeClass (alwaysRun = true)
+     @BeforeClass (alwaysRun = true) // this ensures that before and after methods are run during group tests
+                                    // the default behaviour is they don't run
      public void setup(){
          driver = new ChromeDriver();
 
@@ -34,7 +35,7 @@ public class DependencyTests {
      }
 
 
-    @Test (groups = "smoke")
+    @Test (groups = {"smoke","login"})
     public void login(){
 
 
