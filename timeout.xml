@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Classes" time-out="5000">
+<suite name="Classes" time-out="3000">
 
 
     <test name="UI tests">
